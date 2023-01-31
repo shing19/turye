@@ -119,7 +119,8 @@ function setup() {
   noseCanvas = createGraphics(17, 12);
   mouthCanvas = createGraphics(30, 8);
   // fixed color
-  colorGroup.set("background", color(153, 26, 31));
+  // colorGroup.set("background", color(153, 26, 31));
+  colorGroup.set("background", color(255, 255, 255, 0));
   colorGroup.set("bgcenter", color(238, 205, 112));
   colorGroup.set("fur", color(255, 255, 255));
   colorGroup.set("skin", color(246, 195, 203));
@@ -171,6 +172,7 @@ function setup() {
 	color2 = random([colorsA2, colorsB2, colorsC2, colorsD2, colorsE2]);
 	xOff = -300;
   filter = new makeFilter();
+
 }
 
 function draw() {
@@ -242,9 +244,9 @@ function draw() {
 	stroke(random(colors_frames));
 	strokeWeight(margin * 1);
 	rectMode(CENTER);
-	rect(width / 2, height / 2, width, height);
+	// rect(width / 2, height / 2, width, height);
 	image(overAllTexture, 0, 0);
-	// noLoop();
+	noLoop();
 
   // drawCoordinate();
   drawHatBody();
@@ -287,7 +289,7 @@ function draw() {
   noLoop();
   seed = parseInt(random(10000));
   let name = "turye-" + seed + ".png";
-  save(name);
+  // save(name);
 }
 
 
