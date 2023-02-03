@@ -11,6 +11,7 @@ let gradient;
 
 
 // drawing
+let resize = 0.5
 let canvas = 700;
 let origin = canvas/2;
 let colorGroup = new Map();
@@ -176,6 +177,9 @@ function setup() {
 }
 
 function draw() {
+  // width = width*0.7;
+  // height = height*0.7;
+  resizeCanvas(canvas*resize, canvas*resize)
   // background(colorGroup.get("background"));
 
   // radial gradiant  
@@ -198,6 +202,7 @@ function draw() {
 	noStroke();
 	rectMode(CORNER);
 	rect(0, 0, width, height);
+
 
 	//mountain and river
 	noStroke();
@@ -238,6 +243,7 @@ function draw() {
 		pop();
 	}
 
+
 	//frame
 	noFill();
 	let colors_frames = "be132d-980f24-af011c-800000-730d0d".split("-").map((a) => "#" + a);
@@ -247,6 +253,8 @@ function draw() {
 	// rect(width / 2, height / 2, width, height);
 	image(overAllTexture, 0, 0);
 	noLoop();
+
+  scale(resize);
 
   // drawCoordinate();
   drawHatBody();
@@ -289,7 +297,7 @@ function draw() {
   noLoop();
   seed = parseInt(random(10000));
   let name = "turye-" + seed + ".png";
-  // save(name);
+  save(name);
 }
 
 
