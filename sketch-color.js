@@ -9,9 +9,8 @@ let chineseTraditionalColor = [[[231, 63, 47], [124, 161, 208], [231, 153, 68], 
 // gradient color
 let gradient;
 
-
 // drawing
-let resize = 0.5
+let resize = 0.6
 let canvas = 700;
 let origin = canvas/2;
 let colorGroup = new Map();
@@ -82,7 +81,7 @@ let colorsR2 = "7fdeea-a3b7f0-a1e4f7-6d7db6-5a6696".split("-").map((a) => "#" + 
 
 
 function setup() {
-  createCanvas(canvas, canvas);
+  createCanvas(canvas, canvas).parent('TuryeGen');
   faceCanvas = createGraphics(158, 132);
   hatBaseCanvas = createGraphics(288, 76);
   hatCoverCanvas = createGraphics(242, 145);
@@ -297,7 +296,7 @@ function draw() {
   noLoop();
   seed = parseInt(random(10000));
   let name = "turye-" + seed + ".png";
-  save(name);
+  // save(name);
 }
 
 
