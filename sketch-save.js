@@ -19,11 +19,6 @@ new p5(p => {
         turyeCanvas = document.getElementById("TuryeGen").getElementsByTagName("canvas")[0];
         duplicateTurye = p.createGraphics(turyeCanvas.width, turyeCanvas.height);
         dupCanvas =  document.getElementById("TuryeSave").getElementsByTagName("canvas")[0];
-        
-        console.log(turyeCanvas)
-        console.log(dupCanvas);
-        console.log(dupCanvas.width)
-        console.log(turyeCanvas.height/2-dupCanvas.height/2*0.6)
     }
 
     p.draw = function() {
