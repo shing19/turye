@@ -38,6 +38,5 @@ new p5(p => {
         let dw = dupCanvas.width*0.94/2;
         let dh = dupCanvas.width*0.95*1.31/2;
         ctx.drawImage(turyeCanvas, sx, sy, sw, sh, dx, dy, dw, dh);
-        
     }
 });
