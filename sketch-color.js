@@ -10,7 +10,7 @@ let chineseTraditionalColor = [[[231, 63, 47], [124, 161, 208], [231, 153, 68], 
 let gradient;
 
 // drawing
-let resize = 0.6
+let resize = 0.7 
 let canvas = 700;
 let origin = canvas/2;
 let colorGroup = new Map();
