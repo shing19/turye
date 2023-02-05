@@ -1,5 +1,6 @@
 new p5(p => {
     let resize = 0.8;
+    let turyeResize = 1.35;
     const width = 468;
     const length = 720;
     const parentId = 'TuryeSave'; 
@@ -24,10 +25,10 @@ new p5(p => {
     p.draw = function() {
         p.image(img, 0, 0, width*resize, length*resize);
         let ctx = dupCanvas.getContext('2d');
-        let sx = turyeCanvas.width/2-220*1.35;
-        let sy = turyeCanvas.height/2-290*1.35;
-        let sw = 440*1.35;
-        let sh = 580*1.35;
+        let sx = turyeCanvas.width/2-220*turyeResize;
+        let sy = turyeCanvas.height/2-290*turyeResize;
+        let sw = 440*turyeResize;
+        let sh = 580*turyeResize;
         let dx = dupCanvas.width*0.015;
         let dy = dupCanvas.height*0.025;
         let dw = dupCanvas.width*0.94/2;

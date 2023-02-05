@@ -7,6 +7,15 @@ canvas {
   display: block;
 }
 
+#TuryeSave {
+  display: inline-block;
+}
+
+#TuryeGen {
+  display: inline-block;
+}
+
+
 #shadow {
   position: absolute;
   top: 28.8px;
